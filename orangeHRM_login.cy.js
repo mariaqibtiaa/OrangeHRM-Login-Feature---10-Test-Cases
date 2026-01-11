@@ -1,4 +1,4 @@
-describe('OrangeHRM Login Feature - Fixed', () => {
+describe('OrangeHRM Login Feature - 10 test case', () => {
 
   beforeEach(() => {
     cy.request({
@@ -96,5 +96,6 @@ describe('OrangeHRM Login Feature - Fixed', () => {
     // Cek apakah link-nya beneran mengarah ke LinkedIn, bukan link mati
     cy.get('a[href*="linkedin"]').should('have.attr', 'href').and('include', 'linkedin.com');
   });
+
 
 });
